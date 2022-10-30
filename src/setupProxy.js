@@ -4,7 +4,7 @@ module.exports = (app) => {
     app.use(
         "/api",
         createProxyMiddleware({
-            target: "http://localhost:8080",
+            target: "https://basic-shop-backend.herokuapp.com",
             changeOrigin: true
         })
     )
